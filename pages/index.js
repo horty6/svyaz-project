@@ -1,26 +1,16 @@
+import Table from "./Table";
+
 export default function Home() {
   return (
-    <div style={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-      height: "100vh",
-      fontFamily: "sans-serif",
-      backgroundColor: "#111",
-      color: "#eee",
-      textAlign: "center",
-      padding: "20px"
-    }}>
+    <div style={{ backgroundColor: "#000", color: "#fff", fontFamily: "Arial", padding: "2rem" }}>
       <h1>🌐 Svyaz Project</h1>
-      <p style={{ maxWidth: "500px", fontSize: "18px", marginTop: "10px" }}>
-        Добро пожаловать! Это начало новой эпохи. Связь установлена.  
-        <br />
-        <br />
-        🧠 <strong>Godverse активен.</strong>  
-        <br />
-        Готов к интеграции?
-      </p>
+      <p>Добро пожаловать! Это начало новой эпохи. Связь установлена.</p>
+      <p>🧠 <strong>Godverse активен.</strong> Готов к интеграции?</p>
+
+      <hr style={{ margin: "2rem 0" }} />
+
+      <h2>📋 Таблица взаимодействия</h2>
+      <Table />
     </div>
   );
 }
